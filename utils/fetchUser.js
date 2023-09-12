@@ -7,6 +7,7 @@ const fetchUser = async () => {
   const person = data.results[0];
   const { cell: phone, email } = person;
   const { age } = person.dob;
+  const { large: image } = person.picture;
   const { name: street, number: streetNumber } = person.location.street;
   const { first, last } = person.name;
   const { password } = person.login;
@@ -17,6 +18,7 @@ const fetchUser = async () => {
     street: `${streetNumber} ${street}`,
     phone,
     password,
+    image,
   };
 };
 

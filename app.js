@@ -1,13 +1,9 @@
 //
 import get from './utils/getElement.js';
 import fetchUser from './utils/fetchUser.js';
+import displayUser from './utils/displayUser.js';
 
-const image = get('.image');
 const btn = get('.btn');
-
-const displayUser = (person) => {
-  console.log(person);
-};
 
 const showUser = async () => {
   const data = await fetchUser();
