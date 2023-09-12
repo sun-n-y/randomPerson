@@ -1,10 +1,17 @@
 /*  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *,
 ::before,
 ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .block {
@@ -25,14 +32,10 @@
     max-width: 650px;
     margin: 0 auto;
     transform: translateY(-40%);
-    padding: 1rem;
+    padding: 1.5rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: .5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 .card-container::before {
@@ -41,7 +44,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 35%;
     background-color: #f1f5f8;
     transform: translateY(-50%);
     border-top-left-radius: 1rem;
@@ -55,7 +58,67 @@
     border: 4px solid white;
     outline: 1px solid #b5b8ba;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    margin-bottom: 2rem;
     height: 150px;
     width: 150px;
+    transform: translateY(-35%);
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+}
+
+.title {
+    color: #617d98;
+}
+
+.value {
+    letter-spacing: 1.5px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.icon {
+    font-size: 1.7rem;
+    background-color: transparent;
+    border: none;
+    color: #617d98;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #49a6e9;
+}
+
+.active {
+    color: #49a6e9;
+}
+
+.btn {
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: #49a6e9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    color: #49a6e9;
+    background-color: #183b53;
 }
